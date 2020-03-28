@@ -15,6 +15,19 @@
 --padding-base:5;
 }
 
+/*Colors*/
+.primary-background{
+    background-color: var(--color1);
+}
+
+.secondary-background{
+    background-color: var(--color2);
+}
+
+.tertiary-color{
+    background-color: var(--color5);
+}
+
 html{
     height:100%;
     background-color: var(--color1,lightBlue);
@@ -23,12 +36,17 @@ html{
 
 body{
     font-family: 'Antic Slab', serif;
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family:'Bitter', 'Poppins',serif;
+}
+
+.card{
+    padding: 5px;
+
 }
 
 #intro{
@@ -37,6 +55,14 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     height: 100%;
 }
+
+@media only screen and (max-width: 768px){
+    #flip-button{
+        visibility: none;
+    }
+}
+
+
 
 #card{
     display:flex;
@@ -52,21 +78,31 @@ h1,h2,h3,h4,h5,h6{
 .card-front, .card-back{
     backface-visibility: hidden;
 }
+
 .card-back{
     transform: rotateX(180deg);
     position: absolute;
-    top:110px;
+    height: 93%;
 }
 
 #header{
-    display: inline-flex;
     font-weight:600;
     font-size: large;
 }
 
+/*Cursor*/
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
 /*Margins*/
 .ml-auto{
     margin-left: auto;
+}
+
+.mt-auto{
+    margin-top: auto;
 }
 
 .mr-1{
@@ -100,6 +136,10 @@ h1,h2,h3,h4,h5,h6{
 
 .justify-content-between{
     justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
 }
 
 

@@ -16,6 +16,6 @@ class CardFlipper {
 }
 let card = document.getElementById("card");
 let button = document.getElementById("flip");
-if (button !== null && button instanceof HTMLButtonElement && card !== null && card instanceof HTMLDivElement) {
+if (button !== null  && card !== null && card instanceof HTMLDivElement) {
     let CardFlip = new CardFlipper(card, button);
 }
